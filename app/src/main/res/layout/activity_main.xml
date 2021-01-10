@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stars"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,9 +11,9 @@
         android:id="@+id/cielito"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="cielo"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/espacio"
-         />
+        app:srcCompat="@drawable/espacio" />
 
     <TextView
         android:id="@+id/titulo"
@@ -34,7 +35,6 @@
         android:id="@+id/subtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
@@ -45,5 +45,102 @@
         android:textSize="18sp"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="223dp" />
+
+    <ImageView
+        android:id="@+id/imageStar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="estrella fugaz"
+        android:scaleType="center"
+        app:srcCompat="@drawable/fondostar" />
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:contentDescription="estrellas"
+        android:scaleType="fitCenter"
+
+        app:srcCompat="@drawable/stars" />
+
+    <ImageView
+        android:id="@+id/montes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="montes"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/montes" />
+
+    <ImageView
+        android:id="@+id/palmeras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="palmeras"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/palmeras" />
+
+    <ImageView
+        android:id="@+id/castillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="castillo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/castillo" />
+
+    <ImageView
+        android:id="@+id/pesebre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="pesebre"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pesebre" />
+
+    <ImageView
+        android:id="@+id/reyes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="reyes magos"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/reyes" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/magic"
+        android:text="@string/reyes_magos"
+        android:textAlignment="center"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+
 
 </RelativeLayout>
